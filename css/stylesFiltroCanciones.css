@@ -1,0 +1,60 @@
+/* Contenedor de la lista de las canciones*/
+.listado-canciones{
+    position: absolute;
+    left: 0;
+    top: 50;
+    width: 500px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(228, 228, 228, 0.1);
+    color: var(--blanco);
+}
+
+.listado-canciones h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.listado-canciones ul {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+/* Barra de busqueda */
+#busqueda {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 90%;
+    height: 25px;
+    background: rgba(255, 254, 254, 0.945);
+    border-radius: 4px;
+    margin: 32px 0 24px;
+}
+
+/* Canciones de la Lista */
+.lista-canciones .cancion:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Boton de busqueda */
+.buscar-cancion .filtrar {
+    width: 30px;
+    aspect-ratio: 1/1;
+    margin: 2px;
+    background: rgba(228,228,228,0.1);
+    color: var(--blanco);
+    border-radius: 50%;
+    border: 1px solid var(--blanco);
+    outline: 0;
+    font-size: 1.0rem;
+    box-shadow: 0 6px 10px rgba(249, 250, 250, 0.986);
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.buscar-cancion .filtrar:hover {
+    transform: scale(1.1);
+}
