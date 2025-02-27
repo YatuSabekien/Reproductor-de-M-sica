@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="css/stylesReproductor.css">
     <link rel="stylesheet" href="css/stylesFiltroCanciones.css">
+    <link rel="stylesheet" href="css/stylesLetraCancion.css">
+    <link rel="stylesheet" href="css/stylesDetalles.css">
     <link rel="icon" href="imagen/file-music-fill.svg" type="image/x-icon">
 
 </head>
@@ -34,7 +36,7 @@
 
     <!-- Sección del filtro de canciones -->
     <section2 class="listado-canciones">
-        <h2>Seleccione o busque una canción</h2> 
+        <h1>Seleccione o busque una canción</h1> 
 
         <div class="buscar-cancion">
             <input type="text" id="busqueda" placeholder="Busca una canción...">
@@ -46,14 +48,55 @@
         <div class="lista-canciones">
             <ul id="listaC">
                 <li class="cancion" data-src="videos/Ride - Twenty One Pilots.mp4">Ride - Twenty One Pilots</li>
+                <li class="cancion" data-src="videos/Stressed Out - Twenty One Pilots.mp4">Stressed Out - Twenty One Pilots</li>
+                <li class="cancion" data-src="videos/Heathens - Twenty One Pilots.mp4">Heathens - Twenty One Pilots</li>
+                <li class="cancion" data-src="videos/Chlorine - Twenty One Pilots.mp4">Chlorine - Twenty One Pilots</li>
                 <li class="cancion" data-src="videos/Bones - Imagine Dragons.mp4">Bones - Imagine Dragons</li>
+                <li class="cancion" data-src="videos/Believer - Imagine Dragons.mp4">Beliver - Imagine Dragons</li>
+                <li class="cancion" data-src="videos/Thunder - Imagine Dragons.mp4">Thunder - Imagine Dragons</li>
                 <li class="cancion" data-src="videos/(You Drive Me) Crazy - Britney Spears.mp4">(You Drive Me) Crazy - Britney Spears</li>
+                <li class="cancion" data-src="videos/Baby One More Time - Britney Spears.mp4">...Baby One More Time - Britney Spears</li>
+                <li class="cancion" data-src="videos/Toxic - Britney Spears.mp4">Toxic - Britney Spears</li>
+                <li class="cancion" data-src="videos/Ma Meilleure Ennemie - Stromae, Pomme.mp4">Ma Meilleure Ennemie - Stromae, Pomme</li>
             </ul>
         </div>
     </section2>
 
+    <section3 class="letra-canciones">
+        <h2>Letra de la canción:</h2>
+
+        <div class="letra">
+            <p id="lineaLetra">selecciona una cancion para comenzar</p>
+        </div>
+    </section3>
+
+    <section4 class="descripcion-canciones">
+        <h2>Descripcion de la canción:</h2>
+
+        <div class="descripcion">
+            <p id="titulo-cancion">Titulo de la canción:</p>
+            <p id="artista">Artista(s):</p>
+            <img id="portada-album" src="imagen/tocaDiscos.jpg" alt="Portada del Álbum" /> 
+            <p id="album">Álbum:</p>
+            <p id="duracion">Duración:</p>
+            <p id="genero">Género:</p>
+            <p id="año">Año de lanzamiento:</p>
+            <p id="popularidad">Popularidad:</p>
+        </div>
+    </section4>
+
+    <section5 class="canciones-recomendadas">
+        <h2>Otros éxitos:</h2>
+
+        <ul id="recomendaciones"></ul>
+    </section5>
+
     <script src="js/reproductor.js"></script>
     <script src="js/filtroCanciones.js"></script>
+    <script src="js/listaCanciones.js"></script>
+    <script src="js/letraCanciones.js"></script>
+    <script src="js/listaDetalles.js"></script>
+    <script src="js/detallesCanciones.js"></script>
 
 </body>
 </html>

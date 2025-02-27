@@ -1,0 +1,24 @@
+.letra-canciones {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 500px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background-color: rgba(242, 240, 240, 0.1);
+    color: var(--blanco);
+    margin: 32px 0 24px;
+    margin-left: 35px;
+}
+
+.letra-canciones h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.letra-canciones .letra {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+}

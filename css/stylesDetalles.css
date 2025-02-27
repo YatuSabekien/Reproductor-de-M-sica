@@ -1,0 +1,34 @@
+/* Descripcion de las canciones */
+.descripcion-canciones {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    padding: 45px 30px;
+    border-radius: 20px;
+    background-color: rgba(242, 240, 240, 0.1);
+    color: var(--blanco);
+    margin: 32px 0 24px;
+    margin-right: 35px;
+}
+
+/* Imagen del album de la cancion */
+#portada-album {
+    width: 200px; 
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Canciones recomendadas */
+.canciones-recomendadas {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    padding: 30px 30px;
+    border-radius: 20px;
+    background-color: rgba(242, 240, 240, 0.1);
+    color: var(--blanco);
+    margin: 32px 0 24px;
+    margin-right: 35px;
+}

@@ -24,20 +24,61 @@ const canciones = [
         fuente: 'videos/Ride - Twenty One Pilots.mp4'
     },
     {
+        titulo: 'Stressed Out',
+        nombre: 'Twenty One Pilots',
+        fuente: 'videos/Stressed Out - Twenty One Pilots.mp4'
+    },
+    {
+        titulo: 'Heathens',
+        nombre: 'Twenty One Pilots',
+        fuente: 'videos/Heathens - Twenty One Pilots.mp4'
+    },
+    {
+        titulo: 'Chlorine',
+        nombre: 'Twenty One Pilots',
+        fuente: 'videos/Chlorine - Twenty One Pilots.mp4'
+    },
+    {
         titulo: 'Bones',
         nombre: 'Imagine Dragons',
         fuente: 'videos/Bones - Imagine Dragons.mp4'
+    },
+    {
+        titulo: 'Believer',
+        nombre: 'Imagine Dragons',
+        fuente: 'videos/Believer - Imagine Dragons.mp4'
+    },
+    {
+        titulo: 'Thunder',
+        nombre: 'Imagine Dragons',
+        fuente: 'videos/Thunder - Imagine Dragons.mp4'
     },
     {
         titulo: '(You Drive Me) Crazy',
         nombre: 'Britney Spears',
         fuente: 'videos/(You Drive Me) Crazy - Britney Spears.mp4'
     },
+    {
+        titulo: '...Baby One More Time',
+        nombre: 'Britney Spears',
+        fuente: 'videos/Baby One More Time - Britney Spears.mp4'
+    },
+    {
+        titulo: 'Toxic',
+        nombre: 'Britney Spears',
+        fuente: 'videos/Toxic - Britney Spears.mp4'
+    },
+    {
+        titulo: 'Ma Meilleure Ennemie',
+        nombre: 'Stromae, Pomme',
+        fuente: 'videos/Ma Meilleure Ennemie - Stromae, Pomme.mp4'
+    },
 ];
 
 // Posición de las canciones
 let indiceCancionActual = 0;
 
+// Actualizar la canción
 function actualizarCancion(){
     tituloCancion.textContent = canciones[indiceCancionActual].titulo;
     nombreArtista.textContent = canciones[indiceCancionActual].nombre;
@@ -86,6 +127,12 @@ cancion.addEventListener('loadedmetadata', function () {
 progreso.addEventListener('input', function(){
     cancion.currentTime = progreso.value;
 });
+
+cancion.addEventListener('ended', ()=> {
+    indiceCancionActual = (indiceCancionActual + 1) % canciones.length;
+    actualizarCancion();
+    reproducirCancion();
+}); 
 
 // Boton siguiente
 botonSiguiente.addEventListener('click', function(){

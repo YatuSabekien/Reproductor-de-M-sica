@@ -2,15 +2,18 @@
 .listado-canciones{
     position: absolute;
     left: 0;
-    top: 50;
+    top: 0;
     width: 500px;
-    padding: 10px 30px;
+    padding: 80px 30px;
     border-radius: 20px;
-    background-color: rgba(228, 228, 228, 0.1);
+    background-color: rgba(242, 240, 240, 0.1);
     color: var(--blanco);
+    margin: 32px 0 24px;
+    margin-left: 35px;
 }
 
-.listado-canciones h2 {
+.listado-canciones h1 {
+    margin-left: 35px;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.6;
